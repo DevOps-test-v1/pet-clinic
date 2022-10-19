@@ -59,7 +59,7 @@ steps:
   inputs:
     containerRegistry: 'DockerServiceConnection'
     command: 'build'
-    repository: DevOps-test-v1/pet-clinic
+    repository: murdoko/pet-clinic
     Dockerfile: '**/Dockerfile'
     tags: 'latest'
 
@@ -67,5 +67,5 @@ steps:
       sudo apt-get install -y rpm
       wget https://github.com/aquasecurity/trivy/releases/download/v0.27.1/trivy_0.27.1_Linux-64bit.deb
       sudo dpkg -i trivy_0.27.1_Linux-64bit.deb
-      trivy image DevOps-test-v1/pet-clinic:latest
+      trivy image murdoko/pet-clinic:latest
   displayName: Image Scan
