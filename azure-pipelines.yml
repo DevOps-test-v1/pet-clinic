@@ -58,7 +58,7 @@ steps:
   inputs:
     containerRegistry: 'DockerConnService'
     command: 'build'
-    repository: 'murdoko/pet-clinic'
+    repository: murdoko/pet-clinic
     Dockerfile: '**/Dockerfile'
     tags: 'latest'
 
